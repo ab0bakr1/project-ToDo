@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  background-color: rgb(189, 189, 189);
+  height: 100svh;
+  width: 100svw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo{
+  background-color: rgb(255, 255, 255);
+  min-height: 50svh;
+  min-width: 30svw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border: 5px rgb(189, 189, 189) solid;
+  outline: 5px #fff solid;
+  padding: 0 10px;
+}
+.todo h2{
+  margin-top: 20px;
+  font-size: clamp(2rem,3vw,3rem);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.todo .num {
+  background-color: rgb(189, 189, 189);
+  border: 1px #fff solid;
+  outline: 1px rgb(189, 189, 189) solid;
+  padding: 0px 4px;
+  border-radius: 10px;
+}
+.todo-word{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.todo-word input{
+  width: 60%;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.todo-word button{
+  padding: 2px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.todo-word button:hover{
+  background-color: black;
+  color: white;
+}
+.todo .list{
+  list-style:auto;
+  cursor: pointer;
+  font-size: clamp(1rem,1.5vw,2rem);
+  display: flex;
+  gap: 10px;
+}
+.todo .list .completed{
+  list-style:"✅" ;
+  text-decoration: line-through;
+}
